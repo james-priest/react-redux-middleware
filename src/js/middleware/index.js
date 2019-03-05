@@ -41,7 +41,7 @@ export const forbiddenWordsMiddleware3 = ({ dispatch }) => next => action => {
     }
   }
   if (action.type === FOUND_BAD_WORD) {
-    console.log('Middleware intercept for FOUND_BAD_WORD action.');
+    console.log("Middleware intercept for FOUND_BAD_WORD action.");
     console.log(action.payload);
   }
   return next(action);
