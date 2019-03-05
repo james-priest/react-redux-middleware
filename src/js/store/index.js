@@ -11,4 +11,7 @@ const store = createStore(
   storeEnhancers(applyMiddleware(forbiddenWordsMiddleware3))
 );
 
+// Comment out to remove state output to console
+store.subscribe(() => console.log(store.getState()));
+
 export default store;
